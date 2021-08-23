@@ -4,15 +4,15 @@
 <c:import url="../layout/app.jsp">
     <c:param name="content">
 
-        <h2>id : ${message.id} のメッセージ詳細ページ</h2>
+        <h2>id : ${tasklist.id} のメッセージ詳細ページ</h2>
 
-        <p>やること：<c:out value="${message.title}" /></p>
-        <p>いつまで：<c:out value="${message.content}" /></p>
-        <p>作成日時：<fmt:formatDate value="${message.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
-        <p>更新日時：<fmt:formatDate value="${message.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
+        <p>やること：<c:out value="${tasklist.title}" /></p>
+        <p>いつまで：<c:out value="${tasklit.content}" /></p>
+        <p>作成日時：<fmt:formatDate value="${tasklist.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
+        <p>更新日時：<fmt:formatDate value="${tasklist.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
 
         <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
-        <p><a href="${pageContext.request.contextPath}/edit?id=${message.id}">このメッセージを編集する</a></p>
+        <p><a href="${pageContext.request.contextPath}/edit?id=${tasklist.id}">このメッセージを編集する</a></p>
 
     </c:param>
 </c:import>
